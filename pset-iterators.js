@@ -36,7 +36,6 @@ console.log('Sample Problem:')
 
 // Add your code below this line
 
-console.log(countries[0])
 const firstListedSouthAmericanCountry = countries.find(function (country) {
   return country.continentName === 'South America'
 })
