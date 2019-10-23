@@ -153,3 +153,26 @@ console.log('Problem 5:')
 /** added for formatting purposes **/
 console.log('')
 console.log('-----------------')
+
+/***********
+Problem 6:
+
+1. Using the `countries` array,
+return the name of the all countries that
+have 4 or more official languages
+
+Save the data in a variable
+called `countriesWithFourOrMoreLanguages`, declared with const
+
+2. Print `countriesWithFourOrMoreLanguages` to the console
+
+************/
+console.log('Problem 6:')
+
+// Add your code below this line
+
+// Add your code above this line
+
+/** added for formatting purposes **/
+console.log('')
+console.log('-----------------')
