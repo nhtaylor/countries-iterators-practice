@@ -176,3 +176,26 @@ console.log('Problem 6:')
 /** added for formatting purposes **/
 console.log('')
 console.log('-----------------')
+
+/***********
+Problem 7:
+
+1. Using the `countries` array,
+return the average population of all of
+the countries in South America
+
+Save the data in a variable
+called `avgPopulationOfSouthAmericanCountries`, declared with const
+
+2. Print `avgPopulationOfSouthAmericanCountries` to the console
+
+************/
+console.log('Problem 7:')
+
+// Add your code below this line
+
+// Add your code above this line
+
+/** added for formatting purposes **/
+console.log('')
+console.log('-----------------')
