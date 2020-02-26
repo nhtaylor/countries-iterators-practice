@@ -63,6 +63,11 @@ declared with const
 console.log('Problem 1:')
 
 // Add your code below this line
+const countriesWithNamesStartingWithC = countries.filter(function (country) {
+  return country.countryName.charAt(0) === 'C'
+})
+
+console.log(countriesWithNamesStartingWithC.countryName)
 
 // Add your code above this line
 
@@ -83,6 +88,11 @@ declared with const
 console.log('Problem 2:')
 
 // Add your code below this line
+const allCountryNames = countries.map((country) => {
+  return country.countryName
+})
+
+console.log(allCountryNames.countryName)
 
 // Add your code above this line
 
@@ -103,7 +113,11 @@ of less than 1,000,000 people. Save the data in a variable called `smallCountrie
 console.log('Problem 3:')
 
 // Add your code below this line
+const smallCountries = countries.filter((country) => {
+  return country.population > 1000000
+})
 
+console.log(smallCountries)
 // Add your code above this line
 
 /** added for formatting purposes **/
@@ -124,7 +138,11 @@ declared with const
 console.log('Problem 4:')
 
 // Add your code below this line
+const africanCountries = countries.filter((country) => {
+  return country.continentName === 'Africa'
+})
 
+console.log(africanCountries)
 // Add your code above this line
 
 /** added for formatting purposes **/
@@ -147,7 +165,11 @@ called `englishSpeakingCountries`, declared with const
 console.log('Problem 5:')
 
 // Add your code below this line
+const englishSpeakingCountries = countries.filter((country) => {
+  return country.languages.includes('en')
+})
 
+console.log(englishSpeakingCountries)
 // Add your code above this line
 
 /** added for formatting purposes **/
@@ -170,7 +192,12 @@ called `countriesWithFourOrMoreLanguages`, declared with const
 console.log('Problem 6:')
 
 // Add your code below this line
+const countriesWithFourOrMoreLanguages = countries.filter((country) => {
+  return (country.languages.split(",")).length > 4
+})
 
+
+console.log(countriesWithFourOrMoreLanguages)
 // Add your code above this line
 
 /** added for formatting purposes **/
@@ -193,7 +220,11 @@ called `avgPopulationOfSouthAmericanCountries`, declared with const
 console.log('Problem 7:')
 
 // Add your code below this line
+const avgPopulationOfSouthAmericanCountries = countries.filter((country) => {
+    return country.continentName === 'South America'
+}).reduce((country) => { })
 
+console.log(avgPopulationOfSouthAmericanCountries)
 // Add your code above this line
 
 /** added for formatting purposes **/
