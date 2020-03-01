@@ -197,7 +197,7 @@ const countriesWithFourOrMoreLanguages = countries.filter((country) => {
 })
 
 
-console.log(countriesWithFourOrMoreLanguages)
+// console.log(countriesWithFourOrMoreLanguages)
 // Add your code above this line
 
 /** added for formatting purposes **/
@@ -220,9 +220,19 @@ called `avgPopulationOfSouthAmericanCountries`, declared with const
 console.log('Problem 7:')
 
 // Add your code below this line
-const avgPopulationOfSouthAmericanCountries = countries.filter((country) => {
+const southAmericanCountries = countries.filter((country) => {
     return country.continentName === 'South America'
-}).reduce((country) => { })
+})
+// printing south american countries, to know what we're dealing with
+// console.log(southAmericanCountries)
+
+const sumPopulationOfSouthAmericanCountries = southAmericanCountries.reduce((sum, country) => {
+  return sum + parseInt(country.population)
+}, 0)
+
+console.log(sumPopulationOfSouthAmericanCountries)
+
+const avgPopulationOfSouthAmericanCountries = sumPopulationOfSouthAmericanCountries / southAmericanCountries.length
 
 console.log(avgPopulationOfSouthAmericanCountries)
 // Add your code above this line
